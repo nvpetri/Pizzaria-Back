@@ -1,5 +1,5 @@
 var clientes = {
-    usuários: [{
+    usuarios: [{
             id: 1,
             nome: "Nicolas Petri",
             email: "nicolaspetri18@gmail.com",
@@ -51,4 +51,8 @@ var clientes = {
             }]
         }
     ]
+}
+
+module.exports = {
+    clientes
 }
