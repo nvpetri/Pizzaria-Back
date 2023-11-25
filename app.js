@@ -8,6 +8,17 @@
  * Data ultima modificação: 24/11/2023
  */
 
+/**
+ * Dependecias: express
+ *  npm install express --save
+ * 
+ * Sequelize:
+ *  npm install sequelize --save
+ * 
+ * MySql2:
+ *  npm install mysql2 --save
+ */
+
 const express = require('express')
 
 const app = express()
@@ -18,6 +29,7 @@ app.use(express.urlencoded({ extended: true }))
 const connection = require('./database/database')
 
 const clientes_controller = require('./controller/clientes_controller')
+app.use('/', clientes_controller)
 
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000 - http://localhost:3000/')

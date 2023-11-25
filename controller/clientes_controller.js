@@ -25,13 +25,14 @@ router.get(
 router.post(
     '/cliente/cadastrarCliente',
     (req, res) => {
-        const { nome, email, telefone, senha, cep, bairro, rua, numero, cidade, estado, complemento } = req.body
+        const { nome, email, telefone, senha, foto_perfil, cep, bairro, rua, numero, cidade, estado, complemento } = req.body
 
         Cliente.create({
             nome,
             email,
             telefone,
             senha,
+            foto_perfil,
             cep,
             bairro,
             rua,
