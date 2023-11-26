@@ -31,6 +31,9 @@ const connection = require('./database/database')
 const clientes_controller = require('./controller/clientes_controller')
 app.use('/', clientes_controller)
 
+const categorias_controller = require('./controller/categorias_controller')
+app.use('/', categorias_controller)
+
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000 - http://localhost:3000/')
 })
