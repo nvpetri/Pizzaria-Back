@@ -7,7 +7,7 @@ const router = express.Router()
 const Categoria = require('../model/categorias')
 
 router.get(
-    '/categoria/listarCategoria',
+    '/categorias/listarCategoria',
     (req, res) => {
         Categoria.findAll()
             .then((Cat) => {

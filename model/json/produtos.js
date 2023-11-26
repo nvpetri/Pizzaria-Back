@@ -1,27 +1,27 @@
 var categorias = {
     categoria: [{
             id: 1,
-            nome_categoria: "Pizza Completa",
+            nome: "Pizza Completa",
             icone: ""
         },
         {
             id: 2,
-            nome_categoria: "Pizza Brotinho",
+            nome: "Pizza Brotinho",
             icone: ""
         },
         {
             id: 3,
-            nome_categoria: "Bebidas",
+            nome: "Bebidas",
             icone: ""
         },
         {
             id: 4,
-            nome_categoria: "Bebidas para maiores de 18",
+            nome: "Bebidas para maiores de 18",
             icone: ""
         },
         {
             id: 5,
-            nome_categoria: "Sobremesas",
+            nome: "Sobremesas",
             icone: ""
         }
     ]
