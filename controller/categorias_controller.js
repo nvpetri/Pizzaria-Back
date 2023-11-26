@@ -55,7 +55,7 @@ router.delete(
                     () => {
                         res.json({
                             Erro: '0',
-                            Message: "Categoria removida com sucesso!",
+                            Message: "Categoria excluida com sucesso!",
                             Referencia: '1',
                             Params: '11540'
                         })
@@ -64,5 +64,6 @@ router.delete(
             })
     }
 )
+
 
 module.exports = router

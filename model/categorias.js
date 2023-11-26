@@ -4,6 +4,10 @@ const connection = require("../database/database")
 
 const Categoria = connection.define(
     'categorias', {
+        id: {
+            type: Sequelize.INTEGER,
+            primaryKey: true,
+        },
         nome: {
             type: Sequelize.STRING,
             allowNull: false
