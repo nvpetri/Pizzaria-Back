@@ -7,6 +7,7 @@ const Categoria = connection.define(
         id: {
             type: Sequelize.INTEGER,
             primaryKey: true,
+            autoIncrement: true,
         },
         nome: {
             type: Sequelize.STRING,

@@ -34,6 +34,12 @@ app.use('/', clientes_controller)
 const categorias_controller = require('./controller/categorias_controller')
 app.use('/', categorias_controller)
 
+const comentario_controller = require('./controller/comentario_controller')
+app.use('/', comentario_controller)
+
+const pizza_controller = require('./controller/pizza_controller')
+app.use('/', pizza_controller)
+
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000 - http://localhost:3000/')
 })
