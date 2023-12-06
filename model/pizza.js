@@ -1,4 +1,3 @@
-// models/pizza.js
 const Sequelize = require('sequelize')
 const connection = require('../database/database')
 const Comentario = require('./comentario')
