@@ -43,7 +43,7 @@ router.post(
 )
 
 router.delete(
-    'categorias/deletarCategoria/:id',
+    '/categorias/deletarCategoria/:id',
     (req, res) => {
         const { id } = req.params
 

@@ -13,7 +13,7 @@ const Cliente = connection.define(
             allowNull: false
         },
         telefone: {
-            type: Sequelize.INTEGER(11),
+            type: Sequelize.INTEGER(12),
             allowNull: false
         },
         senha: {
@@ -51,7 +51,19 @@ const Cliente = connection.define(
         complemento: {
             type: Sequelize.STRING,
             allowNull: true
+        },
+        createdAt: {
+            type: Sequelize.DATE,
+            allowNull: false,
+            defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
+        },
+        updatedAt: {
+            type: Sequelize.DATE,
+            allowNull: false,
+            defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+            onUpdate: Sequelize.literal('CURRENT_TIMESTAMP')
         }
+
 
     }
 )
